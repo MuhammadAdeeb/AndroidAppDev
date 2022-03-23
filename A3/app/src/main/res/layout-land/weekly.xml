@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/main_background">
+
+    <TextView
+        android:id="@+id/wa_prec_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:textAlignment="textStart"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wa_desc_tv"
+        tools:text="UV Index: " />
+
+    <TextView
+        android:id="@+id/wa_ntime_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="14dp"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/wa_etime_tv"
+        app:layout_constraintTop_toBottomOf="@+id/wa_mtemp_tv"
+        tools:text="11 pm" />
+
+    <TextView
+        android:id="@+id/wa_etime_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginStart="73dp"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/wa_mtemp_tv"
+        tools:text="5 pm" />
+
+    <TextView
+        android:id="@+id/wa_atime_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="32dp"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintHorizontal_bias="0.584"
+        app:layout_constraintStart_toEndOf="@+id/wa_mtime_tv"
+        app:layout_constraintTop_toBottomOf="@+id/wa_mtemp_tv"
+        tools:text="1 pm" />
+
+    <TextView
+        android:id="@+id/wa_mtime_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="14dp"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wa_mtemp_tv"
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="8 am" />
+
+    <TextView
+        android:id="@+id/wa_ntemp_tv"
+        android:layout_width="75dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/wa_etemp_tv"
+        app:layout_constraintTop_toBottomOf="@+id/wa_uv_tv"
+        tools:text="42 F" />
+
+    <TextView
+        android:id="@+id/wa_etemp_tv"
+        android:layout_width="75dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="16dp"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/wa_uv_tv"
+        tools:text="42 F" />
+
+    <TextView
+        android:id="@+id/wa_atemp_tv"
+        android:layout_width="75dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintHorizontal_bias="0.592"
+        app:layout_constraintStart_toEndOf="@+id/wa_mtemp_tv"
+        app:layout_constraintTop_toBottomOf="@+id/wa_uv_tv"
+        tools:text="42 F" />
+
+    <TextView
+        android:id="@+id/wa_mtemp_tv"
+        android:layout_width="75dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="16dp"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wa_uv_tv"
+        tools:text="42 F" />
+
+    <TextView
+        android:id="@+id/wa_dt_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#6B34DA"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Monday, 11/08" />
+
+    <TextView
+        android:id="@+id/wa_trange_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:textColor="#FFFFFF"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wa_dt_tv"
+        tools:text="77 ' F/43 ' F" />
+
+    <TextView
+        android:id="@+id/wa_desc_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:textAlignment="textStart"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wa_trange_tv"
+        tools:text="Description " />
+
+    <TextView
+        android:id="@+id/wa_uv_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:textAlignment="textStart"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wa_prec_tv"
+        tools:text="UV Index: " />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintGuide_end="342dp"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/wa_iv"
+        android:layout_width="105dp"
+        android:layout_height="106dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wa_dt_tv"
+        app:srcCompat="@drawable/_04d" />
+</androidx.constraintlayout.widget.ConstraintLayout>
